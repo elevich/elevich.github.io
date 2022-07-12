@@ -75,9 +75,7 @@ input, select, textarea {
 /*Projects*/
 
 .btn {
-	border: none; /* Remove borders */
-	padding: 16px 16px 16px 16px; /* Some padding */
-	cursor: pointer; /* Mouse pointer on hover */
+	
 }
 
 
