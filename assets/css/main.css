@@ -91,6 +91,7 @@ input, select, textarea {
 
 /* Remove margins and padding from the list */
 #toDoListUL ul {
+	color: #000;
 	margin: 0;
 	padding: 0;
 }
