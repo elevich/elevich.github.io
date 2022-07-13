@@ -90,13 +90,13 @@ input, select, textarea {
 }
 
 /* Remove margins and padding from the list */
-ul {
+#myUL ul {
 	margin: 0;
 	padding: 0;
 }
 
 	/* Style the list items */
-	ul li {
+	#myUL ul li {
 		cursor: pointer;
 		position: relative;
 		padding: 12px 8px 12px 40px;
@@ -111,24 +111,24 @@ ul {
 	}
 
 		/* Set all odd list items to a different color (zebra-stripes) */
-		ul li:nth-child(odd) {
+		#myUL ul li:nth-child(odd) {
 			background: #f9f9f9;
 		}
 
 		/* Darker background-color on hover */
-		ul li:hover {
+		#myUL ul li:hover {
 			background: #ddd;
 		}
 
 		/* When clicked on, add a background color and strike out text */
-		ul li.checked {
+		#myUL ul li.checked {
 			background: #888;
 			color: #fff;
 			text-decoration: line-through;
 		}
 
 			/* Add a "checked" mark when clicked on */
-			ul li.checked::before {
+			#myUL ul li.checked::before {
 				content: '';
 				position: absolute;
 				border-color: #fff;
@@ -155,14 +155,14 @@ ul {
 	}
 
 /* Style the header */
-.header {
+.toDoListHeader {
 	padding: 30px 40px;
 	color: white;
 	text-align: center;
 }
 
 	/* Clear floats after the header */
-	.header:after {
+	.toDoListHeader:after {
 		content: "";
 		display: table;
 		clear: both;
