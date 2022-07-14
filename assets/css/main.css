@@ -109,6 +109,7 @@ input, select, textarea {
 		-moz-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
+		list-style-type: none;
 	}
 
 		/* Set all odd list items to a different color (zebra-stripes) */
