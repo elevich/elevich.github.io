@@ -100,7 +100,6 @@ input, select, textarea {
 		cursor: pointer;
 		position: relative;
 		padding: 12px 8px 12px 40px;
-		background: #999999;
 		font-size: 18px;
 		transition: 0.2s;
 		/* make the list items unselectable */
@@ -117,7 +116,7 @@ input, select, textarea {
 
 		/* Darker background-color on hover */
 		#toDoListUL ul li:hover {
-			background: #bcbcbc;
+			background: #999999;
 		}
 
 		/* When clicked on, add a background color and strike out text */
