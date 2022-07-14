@@ -100,7 +100,7 @@ input, select, textarea {
 		cursor: pointer;
 		position: relative;
 		padding: 12px 8px 12px 40px;
-		background: #5b5b5b;
+		background: #999999;
 		font-size: 18px;
 		transition: 0.2s;
 		/* make the list items unselectable */
@@ -111,19 +111,17 @@ input, select, textarea {
 	}
 
 		/* Set all odd list items to a different color (zebra-stripes) */
-	#toDoListUL ul li:nth-child(odd) {
-		background: #999999;
-	}
+		#toDoListUL ul li:nth-child(odd) {
+			background: #444;
+		}
 
 		/* Darker background-color on hover */
-	#toDoListUL ul li:hover {
-		background: #ddd;
-	}
+		#toDoListUL ul li:hover {
+			background: #bcbcbc;
+		}
 
 		/* When clicked on, add a background color and strike out text */
 	#toDoListUL ul li.checked {
-		background: #444;
-		color: #fff;
 		text-decoration: line-through;
 	}
 
