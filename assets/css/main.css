@@ -101,6 +101,7 @@ input, select, textarea {
 		cursor: pointer;
 		position: relative;
 		padding: 12px 8px 12px 40px;
+		background: #999999;
 		font-size: 18px;
 		transition: 0.2s;
 		/* make the list items unselectable */
@@ -117,13 +118,14 @@ input, select, textarea {
 
 		/* Darker background-color on hover */
 		#toDoListUL ul li:hover {
-			background: #999999;
+			background: #bcbcbc;
 		}
 
 		/* When clicked on, add a background color and strike out text */
-	#toDoListUL ul li.checked {
-		text-decoration: line-through;
-	}
+		#toDoListUL ul li.checked {
+			background: #1b1f22;
+			text-decoration: line-through;
+		}
 
 			/* Add a "checked" mark when clicked on */
 		#toDoListUL ul li.checked::before {
