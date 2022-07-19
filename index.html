@@ -127,7 +127,6 @@
 
 					// Create a new list item when clicking on the "Add" button
 					function newElement() {
-						document.querySelector("#toDoListUL");
 						var li = document.createElement("li");
                         var inputValue = document.getElementById("myInput").value;
 						var t = document.createTextNode(inputValue);
@@ -135,7 +134,8 @@
 						if (inputValue === '') {
 							alert("Please enter some text and try again.");
 						} else {
-                            document.getElementById("toDoListUL").appendChild(li);
+							document.getElementById("toDoListUL").appendChild(li);
+							li.setAttribute('href', main.css);
 						}
 						document.getElementById("myInput").value = "";
 
