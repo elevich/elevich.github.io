@@ -97,7 +97,7 @@ input, select, textarea {
 }
 
 	/* Style the list items */
-	#toDoListUL ul li {
+	#toDoListUL ul li,  {
 		cursor: pointer;
 		position: relative;
 		padding: 12px 8px 12px 40px;
