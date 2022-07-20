@@ -113,22 +113,22 @@ input, select, textarea {
 }
 
 		/* Set all odd list items to a different color (zebra-stripes) */
-#tDLItem ul li:nth-child(odd) {
+#tDLItem li:nth-child(odd) {
 	background: #444;
 }
 
 		/* Darker background-color on hover */
-#tDLItem ul li:hover {
+#tDLItem li:hover {
 	background: #999999;
 }
 
 		/* When clicked on, add a background color and strike out text */
-#tDLItem ul li.checked {
+#tDLItem li.checked {
 	text-decoration: line-through;
 }
 
 			/* Add a "checked" mark when clicked on */
-	#tDLItem ul li.checked::before {
+	#tDLItem li.checked::before {
 		content: '';
 		position: absolute;
 		border-color: #fff;
