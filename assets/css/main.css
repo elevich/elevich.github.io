@@ -90,14 +90,14 @@ input, select, textarea {
 }
 
 /* Remove margins and padding from the list */
-#tDLItem ul {
+ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
 
 	/* Style the list items */
-#tDLItem ul li {
+ul li {
 	cursor: pointer;
 	position: relative;
 	padding: 12px 8px 12px 40px;
@@ -113,22 +113,22 @@ input, select, textarea {
 }
 
 		/* Set all odd list items to a different color (zebra-stripes) */
-	#tDLItem ul li:nth-child(odd) {
-		background: #444;
+		ul li:nth-child(odd) {
+			background: #444;
 	}
 
 		/* Darker background-color on hover */
-	#tDLItem ul li:hover {
-		background: #999999;
+		ul li:hover {
+			background: #999999;
 	}
 
 		/* When clicked on, add a background color and strike out text */
-	#tDLItem ul li.checked {
-		text-decoration: line-through;
+		ul li.checked {
+			text-decoration: line-through;
 	}
 
 			/* Add a "checked" mark when clicked on */
-		#tDLItem ul li.checked::before {
+		ul li.checked::before {
 			content: '';
 			position: absolute;
 			border-color: #fff;
@@ -142,27 +142,27 @@ input, select, textarea {
 		}
 
 /* Style the close button */
-	#tDLItem ul .close {
+	ul .close {
 		position: absolute;
 		right: 0;
 		top: 0;
 		padding: 12px 16px 12px 16px;
 	}
 
-		#tDLItem ul .close:hover {
+		ul .close:hover {
 			background-color: #f44336;
 			color: white;
 		}
 
 /* Style the header */
-#tDLHeader {
+.toDoListHeader {
 	padding: 30px 40px;
 	color: white;
 	text-align: center;
 }
 
 	/* Clear floats after the header */
-	#tDLHeader:after {
+	.toDoListHeader:after {
 		content: "";
 		display: table;
 		clear: both;
