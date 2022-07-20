@@ -10,6 +10,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/todolist.css" />
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	<script src="https://kit.fontawesome.com/a34315b2dd.js" crossorigin="anonymous"></script>
 
@@ -129,7 +130,6 @@
 					function newElement() {
 						
 						var li = document.createElement("li");
-                        li.setAttribute("href", "assets/css/main.css");
                         var inputValue = document.getElementById("myInput").value;
 						var t = document.createTextNode(inputValue);
 						li.appendChild(t);
