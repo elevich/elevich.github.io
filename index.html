@@ -82,14 +82,14 @@
 						<span onclick="newElement()" class="addBtn">Add</span>
 					</div>
 
-					<div id="tDLItem" class="toDoListItem">
+					<div id="tDLItems" class="toDoListItem">
 						<ul>
-							<li>Hit the gym</li>
-							<li>Pay bills</li>
-							<li>Meet George</li>
-							<li>Buy eggs</li>
-							<li>Read a book</li>
-							<li>Organize office</li>
+							<li id="tDLItem">Hit the gym</li>
+							<li id="tDLItem">Pay bills</li>
+							<li id="tDLItem">Meet George</li>
+							<li id="tDLItem">Buy eggs</li>
+							<li id="tDLItem">Read a book</li>
+							<li id="tDLItem">Organize office</li>
 						</ul>
 					</div>
 				</article>
@@ -97,7 +97,7 @@
 				<!--To Do List JavaScript-->
 				<script>
                     // Create a "close" button and append it to each list item
-					var myNodelist = document.getElementsByTagName("li");
+                    var myNodelist = document.getElementById("tDLItem");
                     var i;
                     for (i = 0; i < myNodelist.length; i++) {
                         var span = document.createElement("SPAN");
