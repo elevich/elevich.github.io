@@ -75,14 +75,14 @@
 				</article>
 
 				<!-- To Do List -->
-				<article id="toDoListMain">
-					<div id="tDLHeader" class="toDoListHeader">
+				<article id="tDLMain">
+					<div id="tDLHeader">
 						<h2>My To Do List</h2>
 						<input type="text" id="myInput" placeholder="New item...">
 						<span onclick="newElement()" class="addBtn">Add</span>
 					</div>
 
-					<div id="tDLItem" class="toDoListItem">
+					<div id="tDLItem">
 						<ul>
 							<li>Hit the gym</li>
 							<li>Pay bills</li>
@@ -97,7 +97,7 @@
 				<!--To Do List JavaScript-->
 				<script>
                     // Create a "close" button and append it to each list item
-                    var myNodelist = document.getElementById("tDLItem li");
+                    var myNodelist = document.getElementById("li");
                     var i;
                     for (i = 0; i < myNodelist.length; i++) {
                         var span = document.createElement("SPAN");
@@ -118,7 +118,7 @@
                     }
 
                     // Add a "checked" symbol when clicking on a list item
-                    var list = document.querySelector('.toDoListItem ul');
+                    var list = document.querySelector('ul');
                     list.addEventListener('click', function (ev) {
                         if (ev.target.tagName === 'li') {
                             ev.target.classList.toggle('checked');
@@ -132,7 +132,7 @@
                         var t = document.createTextNode(inputValue);
                         li.appendChild(t);
                         if (inputValue === '') {
-                            alert("You must write something!");
+                            alert("Please enter text and try again.");
                         } else {
                             document.getElementById("tDLItem").appendChild(li);
                         }
