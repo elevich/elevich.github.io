@@ -19,27 +19,7 @@
 		<!-- Wrapper -->
 		<div id="wrapper">
 
-			<!-- Header -->
-			<header id="header">
-				<div class="logo">
-					<i class="fas fa-leaf fa-2xl"></i>
-				</div>
-				<div class="content">
-					<div class="inner">
-						<h1>Hi, I'm Eli Levich.</h1>
-						<p>I want to design solutions that make people's lives easier.</p>
-					</div>
-				</div>
-				<nav>
-					<ul id="menuMain">
-						<li><a href="#about">About</a></li>
-						<li><a href="#resume">Resume</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#contact">Contact</a></li>
-						<!--<li><a href="#elements">Elements</a></li>-->
-					</ul>
-				</nav>
-			</header>
+			
 
 			<!-- Main -->
 			<div id="main">
@@ -76,7 +56,7 @@
 
 				<!-- To Do List -->
 				<article id="tDLMain">
-					<div id="tDLHeader" class="toDoListHeader" >
+					<div id="tDLHeader" class="toDoListHeader">
 						<h2>My To Do List</h2>
 						<input type="text" id="myInput" placeholder="New item...">
 						<span onclick="newElement()" class="addBtn">Add</span>
@@ -92,63 +72,85 @@
 					</ul>
 				</article>
 
+				<!-- Header -->
+				<header id="header">
+					<div class="logo">
+						<i class="fas fa-leaf fa-2xl"></i>
+					</div>
+					<div class="content">
+						<div class="inner">
+							<h1>Hi, I'm Eli Levich.</h1>
+							<p>I want to design solutions that make people's lives easier.</p>
+						</div>
+					</div>
+					<nav>
+						<ul id="menuMain">
+							<li><a href="#about">About</a></li>
+							<li><a href="#resume">Resume</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#contact">Contact</a></li>
+							<!--<li><a href="#elements">Elements</a></li>-->
+						</ul>
+					</nav>
+				</header>
+
 				<!--To Do List JavaScript-->
 				<script>
 					// Create a "close" button and append it to each list item
-                    var myNodelist = document.getElementsByTagName("li");
-                    var i;
-                    for (i = 0; i < myNodelist.length; i++) {
-                        var span = document.createElement("SPAN");
-                        var txt = document.createTextNode("\u00D7");
-                        span.className = "close";
-                        span.appendChild(txt);
-                        myNodelist[i].appendChild(span);
-                    }
+					var myNodelist = document.getElementsByTagName("li");
+					var i;
+					for (i = 0; i < myNodelist.length; i++) {
+						var span = document.createElement("SPAN");
+						var txt = document.createTextNode("\u00D7");
+						span.className = "close";
+						span.appendChild(txt);
+						myNodelist[i].appendChild(span);
+					}
 
-                    // Click on a close button to hide the current list item
-                    var close = document.getElementsByClassName("close");
-                    var i;
-                    for (i = 0; i < close.length; i++) {
-                        close[i].onclick = function () {
-                            var div = this.parentElement;
-                            div.style.display = "none";
-                        }
-                    }
+					// Click on a close button to hide the current list item
+					var close = document.getElementsByClassName("close");
+					var i;
+					for (i = 0; i < close.length; i++) {
+						close[i].onclick = function () {
+							var div = this.parentElement;
+							div.style.display = "none";
+						}
+					}
 
-                    // Add a "checked" symbol when clicking on a list item
-                    var list = document.querySelector('ul');
-                    list.addEventListener('click', function (ev) {
-                        if (ev.target.tagName === 'LI') {
-                            ev.target.classList.toggle('checked');
-                        }
-                    }, false);
+					// Add a "checked" symbol when clicking on a list item
+					var list = document.querySelector('ul');
+					list.addEventListener('click', function (ev) {
+						if (ev.target.tagName === 'LI') {
+							ev.target.classList.toggle('checked');
+						}
+					}, false);
 
-                    // Create a new list item when clicking on the "Add" button
-                    function newElement() {
-                        var li = document.createElement("li");
-                        var inputValue = document.getElementById("myInput").value;
-                        var t = document.createTextNode(inputValue);
-                        li.appendChild(t);
-                        if (inputValue === '') {
-                            alert("Please add text and try again.");
-                        } else {
-                            document.getElementById("tDLItem").appendChild(li);
-                        }
-                        document.getElementById("myInput").value = "";
+					// Create a new list item when clicking on the "Add" button
+					function newElement() {
+						var li = document.createElement("li");
+						var inputValue = document.getElementById("myInput").value;
+						var t = document.createTextNode(inputValue);
+						li.appendChild(t);
+						if (inputValue === '') {
+							alert("Please add text and try again.");
+						} else {
+							document.getElementById("tDLItem").appendChild(li);
+						}
+						document.getElementById("myInput").value = "";
 
-                        var span = document.createElement("SPAN");
-                        var txt = document.createTextNode("\u00D7");
-                        span.className = "close";
-                        span.appendChild(txt);
-                        li.appendChild(span);
+						var span = document.createElement("SPAN");
+						var txt = document.createTextNode("\u00D7");
+						span.className = "close";
+						span.appendChild(txt);
+						li.appendChild(span);
 
-                        for (i = 0; i < close.length; i++) {
-                            close[i].onclick = function () {
-                                var div = this.parentElement;
-                                div.style.display = "none";
-                            }
-                        }
-                    }
+						for (i = 0; i < close.length; i++) {
+							close[i].onclick = function () {
+								var div = this.parentElement;
+								div.style.display = "none";
+							}
+						}
+					}
 				</script>
 
 
