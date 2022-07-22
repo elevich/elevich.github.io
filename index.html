@@ -31,7 +31,7 @@
 					</div>
 				</div>
 				<nav>
-					<ul>
+					<ul id="menuMain">
 						<li><a href="#about">About</a></li>
 						<li><a href="#resume">Resume</a></li>
 						<li><a href="#projects">Projects</a></li>
@@ -95,7 +95,7 @@
 				<!--To Do List JavaScript-->
 				<script>
 					// Create a "close" button and append it to each list item
-                    var myNodelist = document.getElementsByTagName("li");
+                    var myNodelist = document.querySelector('ul');
                     var i;
                     for (i = 0; i < myNodelist.length; i++) {
                         var span = document.createElement("SPAN");
