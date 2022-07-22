@@ -119,7 +119,7 @@
 					}
 
 					// Add a "checked" symbol when clicking on a list item
-					var list = document.querySelector('li');
+					var list = document.querySelector('#tdlItem');
 					list.addEventListener('click', function (ev) {
 						if (ev.target.tagName === 'LI') {
 							ev.target.classList.toggle('checked');
