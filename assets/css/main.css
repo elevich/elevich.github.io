@@ -97,7 +97,7 @@ ul.toDoListItem {
 }
 
 	/* Style the list items */
- ul li {
+ul li.toDoListItem {
 	cursor: pointer;
 	position: relative;
 	padding: 12px 8px 12px 40px;
