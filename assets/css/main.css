@@ -118,9 +118,9 @@ ul li.toDoListItem {
 	}
 
 		/* Change background color on hover */
-		ul li:hover {
-			background: #999999;
-		}
+ul li:hover.toDoListItem {
+	background: #999999;
+}
 
 		/* When clicked on, strike out text */
 		ul li.checked {
