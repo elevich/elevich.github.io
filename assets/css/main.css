@@ -85,19 +85,19 @@ input, select, textarea {
 /*To Do List CSS*/
 
 /* Include the padding and border in an element's total width and height */
-*.toDoListItem {
+* {
 	box-sizing: border-box;
 }
 
 /* Remove margins and padding from the list */
-ul.toDoListItem {
+ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
 
 	/* Style the list items */
-ul li.toDoListItem {
+ul li {
 	cursor: pointer;
 	position: relative;
 	padding: 12px 8px 12px 40px;
@@ -113,22 +113,22 @@ ul li.toDoListItem {
 }
 
 		/* Set all odd list items to a different color (zebra-stripes) */
-	ul li.toDoListItem:nth-child(odd) {
+	ul li:nth-child(odd).toDoListItem {
 		background: #444;
 	}
 
 		/* Change background color on hover */
-ul li:hover.toDoListItem {
+ul li:hover {
 	background: #999999;
 }
 
 		/* When clicked on, strike out text */
-ul li.checked.toDoListItem {
+ul li.checked {
 	text-decoration: line-through;
 }
 
 			/* Add a "checked" mark when clicked on */
-ul li.checked::before.toDoListItem {
+ul li.checked::before{
 	content: '';
 	position: absolute;
 	border-color: #fff;
