@@ -90,7 +90,7 @@ input, select, textarea {
 }
 
 /* Remove margins and padding from the list */
-ul {
+ul.toDoListItem {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
