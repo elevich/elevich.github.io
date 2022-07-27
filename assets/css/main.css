@@ -142,14 +142,14 @@ ul li.checked::before.toDoListItem {
 }
 
 /* Style the close button */
-.close {
+.close.toDoListItem {
 	position: absolute;
 	right: 0;
 	top: 0;
 	padding: 12px 16px 12px 16px;
 }
 
-.close:hover {
+.close:hover.toDoListItem {
 	background-color: #f44336;
 	color: white;
 }
