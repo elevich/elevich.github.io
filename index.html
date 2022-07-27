@@ -68,7 +68,7 @@
 						<button class="btn" onclick="document.location='#tDLMain'"><i class="fa-solid fa-list-check fa-xl"></i> To Do List </button>
 					</div>
 					<div align="center">
-						<button class="btn"><i class="fa-solid fa-bug fa-xl"></i> Bug Tracker </button>
+						<button class="btn" onclick="document.location='#bugTracker'"><i class="fa-solid fa-bug fa-xl"></i> Bug Tracker </button>
 					</div>
 					<div align="center">
 						<button class="btn"><i class="fa-solid fa-pen-to-square fa-xl"></i> Blog </button>
@@ -94,7 +94,6 @@
 				</article>
 
 
-				
 				<!--To Do List JavaScript-->
 				<script>
 					// Create a "close" button and append it to each list item
@@ -154,6 +153,43 @@
 					}
 				</script>
 
+				<!--Bug Tracker-->
+				<article id="bugTracker">
+					<nav class="navbar navbar-dark bg-mynav">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="#">My App</a>
+						</div>
+					</nav>
+
+					<div class="container">
+						<div class="d-flex bd-highlight mb-3">
+							<div class="me-auto p-2 bd-highlight"><h2>Users</div>
+							<div class="p-2 bd-highlight">
+								<button type="button" class="btn btn-secondary" onclick="showUserCreateBox()">Create</button>
+							</div>
+						</div>
+
+						<div class="table-responsive">
+							<table class="table">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">Avatar</th>
+										<th scope="col">First</th>
+										<th scope="col">Last</th>
+										<th scope="col">Username</th>
+										<th scope="col">Action</th>
+									</tr>
+								</thead>
+								<tbody id="mytable">
+									<tr>
+										<th scope="row" colspan="5">Loading...</th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</article>
 
 				<!-- Contact -->
 				<article id="contact">
