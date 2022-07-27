@@ -123,9 +123,9 @@ ul li:hover.toDoListItem {
 }
 
 		/* When clicked on, strike out text */
-		ul li.checked {
-			text-decoration: line-through;
-		}
+ul li.checked.toDoListItem {
+	text-decoration: line-through;
+}
 
 			/* Add a "checked" mark when clicked on */
 			ul li.checked::before {
