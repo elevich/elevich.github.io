@@ -85,7 +85,7 @@ input, select, textarea {
 /*To Do List CSS*/
 
 /* Include the padding and border in an element's total width and height */
- * {
+*.toDoListItem {
 	box-sizing: border-box;
 }
 
