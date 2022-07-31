@@ -113,9 +113,9 @@ ul li {
 }
 
 		/* Set all odd list items to a different color (zebra-stripes) */
-	.tDLMain ul li:nth-child(odd) {
-		background: #444;
-	}
+.toDoListItem ul li:nth-child(odd) {
+	background: #444;
+}
 
 		/* Change background color on hover */
 ul li:hover {
