@@ -97,11 +97,10 @@ ul {
 }
 
 	/* Style the list items */
-.toDoListItem ul li {
+ul li {
 	cursor: pointer;
 	position: relative;
 	padding: 12px 8px 12px 40px;
-	background: #1b1f22;
 	font-size: 18px;
 	transition: 0.2s;
 	/* make the list items unselectable */
@@ -112,7 +111,11 @@ ul {
 	list-style-type: none;
 }
 
-		/* Set all odd list items to a different color (zebra-stripes) */
+.toDoListItem ul li {
+	background: #1b1f22;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
 .toDoListItem ul li:nth-child(odd) {
 	background: #444;
 }
