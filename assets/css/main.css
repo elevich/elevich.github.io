@@ -118,7 +118,7 @@ ul li {
 }
 
 		/* Change background color on hover */
-ul li:hover {
+.toDoListItem ul li:hover {
 	background: #999999;
 }
 
