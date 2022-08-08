@@ -12,7 +12,7 @@ $name = $_POST['name'];
 $email= $_POST['email'];
 $message= $_POST['message'];
 
-$to = "yourEmail@gmail.com";
+$to = "eli.levich@gmail.com";
 $subject = "This is the subject line";
 
 // The following text will be sent
